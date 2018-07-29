@@ -49,10 +49,8 @@ export default {
 				return;
 			}
 
-			if (el.className.indexOf('mx-btn-item')  == -1) {
-				do{
-					el = el.parentElement;
-				}while(el.className.indexOf('mx-btn-item') > -1)
+			while(el.className.indexOf('mx-btn-item') == -1){
+				el = el.parentElement;
 			}
 
 			let btns = this.$children;

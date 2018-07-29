@@ -18,12 +18,30 @@
       </mark>
     </div>
 
+
+    <div class="row">
+      <mx-select style="width:180px;height:40px;">
+        <mx-option label="A选项"/>
+        <mx-option label="B选项"/>
+        <mx-option label="C选项"/>
+        <mx-option label="D选项"/>
+      </mx-select>
+
+    </div>
+    
+    <div class="row text-left">
+      <mark>
+       多功能选择框：可单选选择、可搜索、可输入.
+      </mark>
+    </div>
+
   </div>
 </template>
 
 <script>
 
 import {BtnGroup,BtnItem} from "./components/btnGroup"
+import {MxSelect,MxOption} from "./components/mxSelect"
 
 /**
  * 配合 boot
@@ -31,7 +49,9 @@ import {BtnGroup,BtnItem} from "./components/btnGroup"
 export default {
   components:{
     BtnGroup,
-    BtnItem
+    BtnItem,
+    MxSelect,
+    MxOption
   },
   name: 'app',
   data () {

@@ -3,7 +3,7 @@
 
 一些 vue 组件的实现。以 JS 的实现为主，尽量剥离样式。默认情况下以 bootstrap 样式为基础样例。
 
-项目演示地址：http://118.24.67.39:1993/
+项目演示地址：https://git.gumx.top/#vue_components
 
 
 起因：

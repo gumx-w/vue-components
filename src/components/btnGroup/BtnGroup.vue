@@ -4,14 +4,6 @@
 
 <script>
 
-/**
- * 基于 bootstrap 的多功能按钮组的实现，具有 单选、多选、反选 功能。
- *
- * 基于开放封闭原则的设计，可以在不修改 btn-group 组件的前提下，扩展更多的 btn-item。
- * 只需要在实现新的 btn-item 时保证具有 value、label属性，并且 btn-item 的跟标签具有 mx-btn-item 样式就可以了。
- *
- */
-
 export default {
 	props:{
 		value:{

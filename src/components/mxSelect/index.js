@@ -1,4 +1,4 @@
-import MxSelect from "./MXSelect.vue";
-import MxOption from "./MXOption.vue";
+import MxSelect from "./MxSelect.vue";
+import MxOption from "./MxOption.vue";
 
 export {MxSelect,MxOption}

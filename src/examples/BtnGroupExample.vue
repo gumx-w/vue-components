@@ -21,7 +21,7 @@
             </div>
 
             <div class="form-group">
-                <label class="control-label">多选选</label>
+                <label class="control-label">多选</label>
                 <div class="col-12">
                     <btn-group class="btn-group" v-model="value2" :multiselect="true">
                         <btn-item value="A" label="A选项"/>
@@ -41,22 +41,46 @@
                     </btn-group>
                 </div>
             </div>
+            <div class="form-group">
+                <label class="control-label">radio 单选（扩展示例）</label>
+                <div class="col-12">
+                    <btn-group class="btn-group" v-model="value4">
+                        <radio-item value="A" label="A选项"/>
+                        <radio-item value="B" label="B选项"/>
+                        <radio-item value="C" label="C选项"/>
+                    </btn-group>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">checkbox 多选（扩展示例）</label>
+                <div class="col-12">
+                    <btn-group class="btn-group" v-model="value5" :multiselect="true">
+                        <checkbox-item value="A" label="A选项"/>
+                        <checkbox-item value="B" label="B选项"/>
+                        <checkbox-item value="C" label="C选项"/>
+                    </btn-group>
+                </div>
+            </div>
+
         </div>        
     </div>
 </div>
 </template>
 
 <script type="text/javascript">
-import {BtnGroup,BtnItem} from "../components/btnGroup"
+import {BtnGroup,BtnItem,RadioItem,CheckboxItem} from "../components/btnGroup"
 
 
 export default{
-	components:{BtnGroup,BtnItem},
+	components:{BtnGroup,BtnItem,RadioItem,CheckboxItem},
 	data:function(){
 		return{
 			value1:'A',
 			value2:['A','B'],
 			value3:'A',
+            value4:'A',
+            value5:['C','B'],
 		}
 	}
 }

@@ -47,7 +47,7 @@
 </template>
 
 <script type="text/javascript">
-import {BtnGroup,BtnItem} from "components/btnGroup"
+import {BtnGroup,BtnItem} from "../components/btnGroup"
 
 
 export default{

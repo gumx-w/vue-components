@@ -7,7 +7,7 @@
             基于开放封闭原则的设计，可以在不修改 btn-group 组件的前提下，扩展更多的 btn-item 类型。</br>
             <mark>只需要在实现新的 btn-item 时保证具有 value、label属性，并且 btn-item 的跟标签的 class 有 mx-btn-item 就可以了。</mark>
         </p>
-        <div class="form-control">
+        <div class="form-control" style="height: auto;">
             <div class="form-group">
                 <label class="control-label">单选</label>
                 <div class="col-12">

@@ -16,7 +16,7 @@
                     1. 当输入完毕，输入的值发生改变的时候，会将新值更新给父组件 input-value
                     2. 当选择某个值时，会将 option 的 value 更新给父组件的 select-value， 将 option 的label 更新给父组件的 input-value</p>
         </p>
-        <div class="form-control">
+        <div class="form-control" style="height: auto;">
             <div class="form-group">
                 <label class="control-label">单选</label>
                 <div class="col-4">

@@ -15,21 +15,17 @@
 			<button type="button" class="btn btn-primary" @click="showModal">SHOW MODAL</button>
 			<br><br>
 			<p class="bg-info">状态：{{msg}}</p>
-			<bs-modal ref="modal" @bs-hide="msg='隐藏'" @bs-show="msg='显示'">
-				<div class="modal-dialog modal-sm" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
-							<h4 class="modal-title">Modal title</h4>
-						</div>
-						<div class="modal-body">
-							<p>One fine body&hellip;</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
+			<bs-modal ref="modal" @bs-hide="msg='隐藏'" @bs-show="msg='显示'" type="sm" width="1000px">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
 				</div>
 			</bs-modal>
         </div>

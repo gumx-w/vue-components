@@ -1,7 +1,11 @@
 <template>
 	<span @click="clickHander" v-show="display">
 		<div class="modal fade in" tabindex="-1" style="display:block;" ref="modal">
-			<slot></slot>
+			<div class="modal-dialog" :class="'modal-' + type" :style="{'width':width}">
+				<div class="modal-content">
+					<slot></slot>
+				</div>
+			</div>
 		</div>
 		<div class='modal-backdrop fade in' style="display:block;" ref="fade"></div>	
 	</span>
@@ -10,6 +14,16 @@
 <script>
 
 export default {
+	props:{
+		type:{
+			type:String,
+			default:'md'
+		},
+		width:{
+			type:String,
+			default:null,
+		}
+	},
 	data(){
 		return {
 			display:false,

@@ -51,7 +51,7 @@
 </template>
 
 <script type="text/javascript">
-import {MxSelect,MxOption} from "../components/mxSelect"
+import {MxSelect,MxOption} from "../../components/mx/mxSelect"
 
 export default{
 	components:{MxSelect,MxOption},
